@@ -1,19 +1,24 @@
-// تابع برای باز و بسته کردن منو موبایل
-function toggleMenu() {
-        document.getElementById('mobile-menu').classList.toggle('open');
-        document.getElementById('overlay').classList.toggle('open');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".hamburger-menu");
+    const mobileMenu = document.querySelector("#mobile-menu");
+    const overlay = document.querySelector("#overlay");
+
+    // تابع برای باز و بسته کردن منو
+    function toggleMenu() {
+        mobileMenu.classList.toggle("open");
+        overlay.classList.toggle("open");
     }
-    
-    // بستن منو با کلیک روی Overlay
-    document.getElementById('overlay').addEventListener('click', () => {
-        document.getElementById('mobile-menu').classList.remove('open');
-        document.getElementById('overlay').classList.remove('open');
-    });
-    
-    // اضافه کردن رویداد به منو همبرگری برای باز و بسته کردن منو
-    document.querySelector('.hamburger-menu').addEventListener('click', toggleMenu);
-    function toggleMobileMenu() {
-        const mobileMenu = document.querySelector('.mobile-menu');
-        mobileMenu.classList.toggle('open');
+
+    // اضافه کردن رویداد کلیک به دکمه همبرگری
+    if (menuToggle) {
+        menuToggle.addEventListener("click", toggleMenu);
     }
-        
+
+    // بستن منو با کلیک روی پس‌زمینه (Overlay)
+    if (overlay) {
+        overlay.addEventListener("click", function () {
+            mobileMenu.classList.remove("open");
+            overlay.classList.remove("open");
+        });
+    }
+});
