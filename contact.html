@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- هدر -->
+    <header>
+        <div class="logo">لوگو</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                <li><a href="services.html"><i class="fas fa-concierge-bell"></i> خدمات</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> تماس با ما</a></li>
+            </ul>
+        </nav>
+
+        <!-- فرم عضویت در خبرنامه -->
+        <div class="newsletter">
+            <input type="email" placeholder="ایمیل خود را وارد کنید" class="newsletter-input">
+            <button class="newsletter-btn">عضویت</button>
+        </div>
+
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- منوی موبایل -->
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+            <li><a href="services.html"><i class="fas fa-concierge-bell"></i> خدمات</a></li>
+            <li><a href="contact.html"><i class="fas fa-phone"></i> تماس با ما</a></li>
+        </ul>
+    </div>
+
+    <!-- محتوای صفحه تماس با ما -->
+    <main>
+        <section class="contact-form">
+            <h2>تماس با ما</h2>
+            <form action="#" method="POST">
+                <label for="name">نام شما:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">ایمیل:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">پیام شما:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">ارسال</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- فوتر -->
+    <footer>
+        <div class="social-icons-container">
+                <a href="https://telegram.me/nevisande2000" class="social-icon" target="_blank">
+                    <i class="fab fa-telegram-plane"></i> <!-- تلگرام -->
+                </a>
+                <a href="https://www.instagram.com/nevisande2000" class="social-icon" target="_blank">
+                    <i class="fab fa-instagram"></i> <!-- اینستاگرام -->
+                </a>
+                <a href="https://eitaa.com/nevisande2000" class="social-icon" target="_blank">
+                    <i class="fab fa-telegram-plane"></i> <!-- ایتا -->
+                </a>
+                <a href="https://soroush.app/nevisande2000" class="social-icon" target="_blank">
+                    <i class="fab fa-telegram-plane"></i> <!-- سروش -->
+                </a>
+                <a href="https://www.facebook.com/nevisande2000" class="social-icon" target="_blank">
+                    <i class="fab fa-facebook-f"></i> <!-- فیس بوک -->
+                </a>
+            </div>
+            
+    </footer>
+    
+
+    <!-- اسکریپت برای منوی همبرگری -->
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const overlay = document.querySelector('.overlay');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        hamburger.addEventListener('click', () => {
+            overlay.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+        
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('open');
+            mobileMenu.classList.remove('open');
+        });
+    </script>
+</body>
+</html>

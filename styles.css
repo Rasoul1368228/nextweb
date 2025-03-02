@@ -1,0 +1,324 @@
+/* تنظیمات پایه */
+body {
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'IranSans', 'Vazir', Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+/* استایل هدر */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #A9D5B6; /* رنگ ملایم و جدید برای هدر */
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: auto;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.hamburger-menu:hover {
+    color: #ddd;
+    transform: scale(1.1);
+}
+
+/* فرم عضویت در خبرنامه */
+.newsletter {
+    padding: 10px 15px;
+    background-color: #FF9800;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.newsletter:hover {
+    background-color: #E68900;
+    transform: scale(1.05);
+}
+
+/* منوی موبایل */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.overlay.open {
+    display: block;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-menu.open {
+    display: block;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin: 20px 0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.mobile-menu a:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* تنظیمات واکنش‌گرایی برای موبایل */
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* محتوای اصلی */
+main {
+    margin-top: 80px;
+    padding: 30px;
+}
+
+/* استایل محتوای پست‌ها */
+.blog-post {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* تنظیم پهنا */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.blog-post:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-5px);
+}
+
+.blog-post h3 {
+    margin-top: 0;
+}
+
+.blog-post p {
+    color: #666;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.blog-post a:hover {
+    color: #388E3C;
+}
+
+/* استایل فرم تماس */
+.contact-form {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #388E3C;
+}
+
+/* استایل فوتر */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #A9D5B6;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* محدود کردن عرض فوتر */
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+    font-weight: bold;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+/* آیکون‌های شبکه‌های اجتماعی عمودی و متحرک */
+.social-icons-container {
+    position: fixed;
+    right: 10px; /* فاصله از سمت راست */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* فاصله کم‌تر بین آیکون‌ها */
+    z-index: 1000;
+}
+
+.social-icon {
+    background-color: rgba(0, 0, 0, 0.1); /* رنگ پس زمینه کم‌رنگ‌تر */
+    color: rgba(255, 255, 255, 0.7); /* رنگ آیکون کم‌رنگ‌تر */
+    padding: 8px; /* کم‌تر کردن فاصله داخلی */
+    border-radius: 5px; /* گوشه‌های مربع */
+    font-size: 22px; /* اندازه آیکون */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s; /* افزودن انیمیشن برای رنگ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* پس‌زمینه هنگام هاور پر رنگ‌تر */
+    transform: scale(1.1); /* افکت بزرگ شدن هنگام هاور */
+    color: rgba(255, 255, 255, 1); /* رنگ آیکون روشن‌تر هنگام هاور */
+}
+
+/* استایل برای موبایل */
+@media screen and (max-width: 600px) {
+    .social-icons-container {
+        top: 80%; /* برای موبایل از پایین صفحه شروع می‌شود */
+    }
+}
+
