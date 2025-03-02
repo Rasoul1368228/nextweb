@@ -12,4 +12,8 @@ function toggleMenu() {
     
     // اضافه کردن رویداد به منو همبرگری برای باز و بسته کردن منو
     document.querySelector('.hamburger-menu').addEventListener('click', toggleMenu);
-    
+    function toggleMobileMenu() {
+        const mobileMenu = document.querySelector('.mobile-menu');
+        mobileMenu.classList.toggle('open');
+    }
+        

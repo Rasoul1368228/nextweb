@@ -161,6 +161,66 @@ header {
         display: flex;
         flex-direction: column;
     }
+
+    /* محتوای اصلی */
+    main {
+        margin-top: 100px; /* فاصله بیشتر برای محتوا از هدر */
+        padding: 20px;
+    }
+
+    /* پست‌ها */
+    .blog-post {
+        width: 100%;
+        padding: 15px; /* کاهش فاصله داخلی پست‌ها */
+    }
+
+    /* هدر */
+    header {
+        padding: 10px 20px;
+    }
+
+    /* آیکون‌ها */
+    .social-icons-container {
+        top: 80%; /* برای موبایل از پایین صفحه شروع می‌شود */
+    }
+
+    .social-icon {
+        font-size: 20px; /* اندازه آیکون‌ها کمی کوچکتر در موبایل */
+        padding: 10px; /* فاصله داخلی کمتر */
+        width: 45px; /* اندازه کوچک‌تر برای موبایل */
+        height: 45px; /* اندازه کوچک‌تر برای موبایل */
+    }
+}
+
+/* استایل برای موبایل افقی */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    /* هدر */
+    header {
+        padding: 15px 30px;
+    }
+
+    /* آیکون‌ها */
+    .social-icons-container {
+        top: 60%; /* موقعیت آیکون‌ها در حالت افقی */
+    }
+
+    .social-icon {
+        font-size: 24px; /* اندازه آیکون‌ها در حالت افقی */
+        padding: 10px; /* فاصله داخلی مناسب */
+        width: 45px; /* اندازه مناسب در حالت افقی */
+        height: 45px;
+    }
+
+    /* محتوای اصلی */
+    main {
+        margin-top: 100px; /* فاصله بیشتر برای محتوا از هدر */
+        padding: 20px;
+    }
+
+    /* پست‌ها */
+    .blog-post {
+        width: 90%; /* عرض پست‌ها کمتر از 100% در حالت افقی */
+    }
 }
 
 /* محتوای اصلی */
@@ -289,103 +349,59 @@ footer p {
 /* آیکون‌های شبکه‌های اجتماعی عمودی و متحرک */
 .social-icons-container {
     position: fixed;
-    right: 10px; /* فاصله از سمت راست */
+    right: 5px; /* فاصله بیشتر از سمت راست */
     top: 50%;
-    transform: translateY(-50%); /* برای قرار گرفتن در وسط صفحه */
+    transform: translateY(-50%); /* قرار گرفتن در وسط صفحه */
     display: flex;
     flex-direction: column;
-    gap: 12px; /* فاصله کم‌تر بین آیکون‌ها */
+    gap: 12px; /* فاصله عمودی کمتر بین آیکون‌ها */
     z-index: 1000;
 }
 
 .social-icon {
-    background-color: rgba(0, 0, 0, 0.1); /* رنگ پس زمینه کم‌رنگ‌تر */
+    background-color: rgba(0, 0, 0, 0.1); /* پس زمینه کم‌رنگ‌تر */
     color: rgba(255, 255, 255, 0.7); /* رنگ آیکون کم‌رنگ‌تر */
-    padding: 12px; /* فاصله داخلی بیشتر برای بهبود نمایش */
-    border-radius: 5px; /* گوشه‌های مربع */
-    font-size: 24px; /* اندازه آیکون کمی بزرگتر */
+    padding: 10px; /* فاصله داخلی کمتر برای بهبود نمایش */
+    border-radius: 5px; /* گوشه‌های مربعی */
+    font-size: 18px; /* اندازه آیکون کوچکتر */
     text-align: center;
-    transition: background-color 0.3s, transform 0.3s, color 0.3s; /* افزودن انیمیشن برای رنگ */
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 .social-icon:hover {
-    background-color: rgba(0, 0, 0, 0.3); /* پس‌زمینه هنگام هاور پر رنگ‌تر */
+    background-color: rgba(0, 0, 0, 0.3); /* پس زمینه هنگام هاور پر رنگ‌تر */
     transform: scale(1.1); /* افکت بزرگ شدن هنگام هاور */
     color: rgba(255, 255, 255, 1); /* رنگ آیکون روشن‌تر هنگام هاور */
 }
 
 /* استایل برای موبایل */
 @media screen and (max-width: 600px) {
+    /* آیکون‌ها */
     .social-icons-container {
-        top: 80%; /* برای موبایل از پایین صفحه شروع می‌شود */
+        top: 80%; /* موقعیت پایین‌تر آیکون‌ها در موبایل */
     }
 
     .social-icon {
-        font-size: 20px; /* اندازه آیکون‌ها کمی کوچکتر در موبایل */
-        padding: 10px; /* فاصله داخلی کمتر */
-        width: 45px; /* اندازه کوچک‌تر برای موبایل */
-        height: 45px; /* اندازه کوچک‌تر برای موبایل */
-    }
-
-    /* هدر */
-    header {
-        padding: 10px 20px;
-    }
-    
-    .navbar ul {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* محتوای اصلی */
-    main {
-        margin-top: 100px; /* فاصله بیشتر برای محتوا از هدر */
-        padding: 20px;
-    }
-
-    /* پست‌ها */
-    .blog-post {
-        width: 100%;
-        padding: 15px; /* کاهش فاصله داخلی پست‌ها */
+        font-size: 18px; /* اندازه آیکون‌ها کمی کوچکتر */
+        padding: 8px; /* فاصله داخلی کمتر */
+        width: 40px; /* اندازه کوچک‌تر برای موبایل */
+        height: 40px; /* اندازه کوچک‌تر برای موبایل */
     }
 }
 
 /* استایل برای موبایل افقی */
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    /* هدر */
-    header {
-        padding: 15px 30px;
-    }
-
+    /* آیکون‌ها */
     .social-icons-container {
-        top: 60%; /* موقعیت آیکون‌ها در حالت افقی */
+        top: 50%; /* موقعیت آیکون‌ها در حالت افقی */
     }
 
     .social-icon {
-        font-size: 24px; /* اندازه آیکون‌ها در حالت افقی */
+        font-size: 22px; /* اندازه آیکون‌ها در حالت افقی */
         padding: 10px; /* فاصله داخلی مناسب */
         width: 45px; /* اندازه مناسب در حالت افقی */
         height: 45px;
-    }
-
-    /* محتوای اصلی */
-    main {
-        margin-top: 100px; /* فاصله بیشتر برای محتوا از هدر */
-        padding: 20px;
-    }
-
-    /* پست‌ها */
-    .blog-post {
-        width: 90%; /* عرض پست‌ها کمتر از 100% در حالت افقی */
     }
 }
