@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>درباره ما</title>
+    <title>درباره ما - سایت کد زیبا</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
     <!-- هدر -->
     <header>
         <div class="logo">لوگو</div>
+        <!-- منو -->
         <nav class="navbar">
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
                 <li><a href="services.html"><i class="fas fa-concierge-bell"></i> خدمات</a></li>
-                <li><a href="contact.html"><i class="fas fa-phone"></i> تماس با ما</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> بلاگ</a></li>
             </ul>
         </nav>
         <!-- فرم عضویت در خبرنامه -->
@@ -25,67 +27,45 @@
             <input type="email" placeholder="ایمیل خود را وارد کنید" class="newsletter-input">
             <button class="newsletter-btn">عضویت</button>
         </div>
-        <div class="hamburger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
     </header>
 
-    <!-- منوی موبایل -->
-    <div class="overlay"></div>
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
-            <li><a href="services.html"><i class="fas fa-concierge-bell"></i> خدمات</a></li>
-            <li><a href="contact.html"><i class="fas fa-phone"></i> تماس با ما</a></li>
-        </ul>
-    </div>
-
-    <!-- محتوای صفحه درباره ما -->
+    <!-- محتوای اصلی -->
     <main>
         <section class="about-us">
             <h2>درباره ما</h2>
-            <p>شرکت ما به عنوان یکی از پیشگامان در زمینه خدمات دیجیتال و طراحی وب فعالیت می‌کند. تیم ما متشکل از متخصصان و طراحان با تجربه است که تلاش می‌کنند بهترین تجربه را برای کاربران فراهم کنند.</p>
+            <p>
+                به سایت کد زیبا خوش آمدید! ما با افتخار به عنوان مقصد اول شما برای خرید محصولات با کیفیت و زیبا در دنیای اینترنت شناخته می‌شویم. ماموریت ما این است که تجربه خرید شما را به یک لذت واقعی تبدیل کنیم و به شما این امکان را بدهیم که با خیال راحت و اطمینان کامل خرید کنید.
+            </p>
+            <p>
+                تیم ما متشکل از افرادی با تجربه و متخصص در زمینه‌ی انتخاب و ارائه‌ی محصولات برتر است. ما به طور مداوم به دنبال ارائه جدیدترین و بهترین محصولات با بهترین قیمت‌ها هستیم تا نیازهای شما را برآورده کنیم.
+            </p>
+            <h3>چرا ما؟</h3>
+            <ul>
+                <li>کیفیت بالا: تمامی محصولات ما با دقت انتخاب شده و با کیفیت بالا ارائه می‌شوند.</li>
+                <li>قیمت مناسب: ما همواره تلاش می‌کنیم تا بهترین قیمت‌ها را به شما ارائه دهیم.</li>
+                <li>رضایت مشتری: رضایت شما اولویت ماست. ما همیشه آماده‌ایم تا به سوالات شما پاسخ دهیم و خدمات پس از فروش عالی ارائه دهیم.</li>
+                <li>تنوع محصولات: شما می‌توانید از میان طیف گسترده‌ای از محصولات متنوع و زیبا انتخاب کنید.</li>
+            </ul>
         </section>
     </main>
 
     <!-- فوتر -->
-    <footer><div class="social-icons-container">
-        <a href="https://telegram.me/nevisande2000" class="social-icon" target="_blank">
-            <i class="fab fa-telegram-plane"></i> <!-- تلگرام -->
-        </a>
-        <a href="https://www.instagram.com/nevisande2000" class="social-icon" target="_blank">
-            <i class="fab fa-instagram"></i> <!-- اینستاگرام -->
-        </a>
-        <a href="https://eitaa.com/nevisande2000" class="social-icon" target="_blank">
-            <i class="fab fa-telegram-plane"></i> <!-- ایتا -->
-        </a>
-        <a href="https://soroush.app/nevisande2000" class="social-icon" target="_blank">
-            <i class="fab fa-telegram-plane"></i> <!-- سروش -->
-        </a>
-        <a href="https://www.facebook.com/nevisande2000" class="social-icon" target="_blank">
-            <i class="fab fa-facebook-f"></i> <!-- فیس بوک -->
-        </a>
-    </div>
-    
+    <footer>
+        <!-- محتوای فوتر می‌تواند اینجا قرار بگیرد -->
     </footer>
-    
 
-    <!-- اسکریپت برای منوی همبرگری -->
-    <script>
-        const hamburger = document.querySelector('.hamburger-menu');
-        const overlay = document.querySelector('.overlay');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        
-        hamburger.addEventListener('click', () => {
-            overlay.classList.toggle('open');
-            mobileMenu.classList.toggle('open');
-        });
-        
-        overlay.addEventListener('click', () => {
-            overlay.classList.remove('open');
-            mobileMenu.classList.remove('open');
-        });
-    </script>
+    <!-- Elfsight Website Translator -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-a409464f-0fd9-4cd0-88ec-f4ca2ef2e664" data-elfsight-app-lazy></div>
+    
+    <!-- Elfsight WhatsApp Chat -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-a73cb180-4ad9-4ae2-9f47-06223b82e95a whatsapp-widget" data-elfsight-app-lazy></div>
+
+    <!-- Elfsight Social Media Icons -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-2c1fd513-4a79-42ed-8d68-4685e1109893" data-elfsight-app-lazy></div>
+
 </body>
+
 </html>

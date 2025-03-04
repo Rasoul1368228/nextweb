@@ -10,11 +10,13 @@ body {
 
 /* استایل هدر */
 header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #A9D5B6; /* رنگ ملایم و جدید برای هدر */
+    background-color: #A9D5B6;
     color: #fff;
     position: fixed;
     width: 100%;
@@ -58,35 +60,6 @@ header {
 
 .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.3);
-    transform: scale(1.05);
-}
-
-.hamburger-menu {
-    font-size: 30px;
-    cursor: pointer;
-    color: #fff;
-    margin-left: auto;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.hamburger-menu:hover {
-    color: #ddd;
-    transform: scale(1.1);
-}
-
-/* فرم عضویت در خبرنامه */
-.newsletter {
-    padding: 10px 15px;
-    background-color: #FF9800;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.newsletter:hover {
-    background-color: #E68900;
     transform: scale(1.05);
 }
 
@@ -147,82 +120,6 @@ header {
     transform: scale(1.05);
 }
 
-/* تنظیمات واکنش‌گرایی برای موبایل */
-@media screen and (max-width: 600px) {
-    .navbar ul {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* محتوای اصلی */
-    main {
-        margin-top: 100px; /* فاصله بیشتر برای محتوا از هدر */
-        padding: 20px;
-    }
-
-    /* پست‌ها */
-    .blog-post {
-        width: 100%;
-        padding: 15px; /* کاهش فاصله داخلی پست‌ها */
-    }
-
-    /* هدر */
-    header {
-        padding: 10px 20px;
-    }
-
-    /* آیکون‌ها */
-    .social-icons-container {
-        top: 80%; /* برای موبایل از پایین صفحه شروع می‌شود */
-    }
-
-    .social-icon {
-        font-size: 20px; /* اندازه آیکون‌ها کمی کوچکتر در موبایل */
-        padding: 10px; /* فاصله داخلی کمتر */
-        width: 45px; /* اندازه کوچک‌تر برای موبایل */
-        height: 45px; /* اندازه کوچک‌تر برای موبایل */
-    }
-}
-
-/* استایل برای موبایل افقی */
-@media screen and (max-width: 768px) and (orientation: landscape) {
-    /* هدر */
-    header {
-        padding: 15px 30px;
-    }
-
-    /* آیکون‌ها */
-    .social-icons-container {
-        top: 60%; /* موقعیت آیکون‌ها در حالت افقی */
-    }
-
-    .social-icon {
-        font-size: 24px; /* اندازه آیکون‌ها در حالت افقی */
-        padding: 10px; /* فاصله داخلی مناسب */
-        width: 45px; /* اندازه مناسب در حالت افقی */
-        height: 45px;
-    }
-
-    /* محتوای اصلی */
-    main {
-        margin-top: 100px; /* فاصله بیشتر برای محتوا از هدر */
-        padding: 20px;
-    }
-
-    /* پست‌ها */
-    .blog-post {
-        width: 90%; /* عرض پست‌ها کمتر از 100% در حالت افقی */
-    }
-}
-
 /* محتوای اصلی */
 main {
     margin-top: 80px;
@@ -236,7 +133,7 @@ main {
     border-radius: 10px;
     margin: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%; /* تنظیم پهنا */
+    width: 80%;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -327,43 +224,24 @@ footer {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* محدود کردن عرض فوتر */
-footer .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-left, .footer-right {
-    font-weight: bold;
-    color: #fff;
-}
-
-footer p {
-    margin: 0;
-}
-
 /* آیکون‌های شبکه‌های اجتماعی عمودی و متحرک */
 .social-icons-container {
     position: fixed;
-    right: 5px; /* فاصله بیشتر از سمت راست */
+    right: 5px;
     top: 50%;
-    transform: translateY(-50%); /* قرار گرفتن در وسط صفحه */
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 12px; /* فاصله عمودی کمتر بین آیکون‌ها */
+    gap: 12px;
     z-index: 1000;
 }
 
 .social-icon {
-    background-color: rgba(0, 0, 0, 0.1); /* پس زمینه کم‌رنگ‌تر */
-    color: rgba(255, 255, 255, 0.7); /* رنگ آیکون کم‌رنگ‌تر */
-    padding: 10px; /* فاصله داخلی کمتر برای بهبود نمایش */
-    border-radius: 5px; /* گوشه‌های مربعی */
-    font-size: 18px; /* اندازه آیکون کوچکتر */
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
     text-align: center;
     transition: background-color 0.3s, transform 0.3s, color 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -371,37 +249,100 @@ footer p {
 }
 
 .social-icon:hover {
-    background-color: rgba(0, 0, 0, 0.3); /* پس زمینه هنگام هاور پر رنگ‌تر */
-    transform: scale(1.1); /* افکت بزرگ شدن هنگام هاور */
-    color: rgba(255, 255, 255, 1); /* رنگ آیکون روشن‌تر هنگام هاور */
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 1);
 }
 
 /* استایل برای موبایل */
 @media screen and (max-width: 600px) {
-    /* آیکون‌ها */
+    .navbar ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    .blog-post {
+        width: 100%;
+        padding: 15px;
+    }
+
     .social-icons-container {
-        top: 80%; /* موقعیت پایین‌تر آیکون‌ها در موبایل */
+        top: 80%;
     }
 
     .social-icon {
-        font-size: 18px; /* اندازه آیکون‌ها کمی کوچکتر */
-        padding: 8px; /* فاصله داخلی کمتر */
-        width: 40px; /* اندازه کوچک‌تر برای موبایل */
-        height: 40px; /* اندازه کوچک‌تر برای موبایل */
+        font-size: 20px;
+        padding: 10px;
+        width: 45px;
+        height: 45px;
     }
 }
 
 /* استایل برای موبایل افقی */
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    /* آیکون‌ها */
+    header {
+        padding: 15px 30px;
+    }
+
     .social-icons-container {
-        top: 50%; /* موقعیت آیکون‌ها در حالت افقی */
+        top: 60%;
     }
 
     .social-icon {
-        font-size: 22px; /* اندازه آیکون‌ها در حالت افقی */
-        padding: 10px; /* فاصله داخلی مناسب */
-        width: 45px; /* اندازه مناسب در حالت افقی */
+        font-size: 24px;
+        padding: 10px;
+        width: 45px;
         height: 45px;
     }
+
+    main {
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    .blog-post {
+        width: 90%;
+    }
+}
+
+/* ویژگی‌های اضافی */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+    font-size: 30px;
+    margin-right: 15px;
+    color: #4CAF50;
+}
+
+.feature-item p {
+    font-size: 16px;
 }

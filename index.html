@@ -3,105 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه اصلی</title>
+    <title>سایت کد زیبا</title>
+    
+    <!-- لینک‌های استایل -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- هدر -->
+    <!-- هدر سایت -->
     <header>
         <div class="logo">لوگو</div>
         <nav class="navbar">
-            <ul>
+            <ul style="text-align: right;">
                 <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
                 <li><a href="services.html"><i class="fas fa-concierge-bell"></i> خدمات</a></li>
-                <li><a href="contact.html"><i class="fas fa-phone"></i> تماس با ما</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> بلاگ</a></li>
             </ul>
         </nav>
+
         <!-- فرم عضویت در خبرنامه -->
         <div class="newsletter">
             <input type="email" placeholder="ایمیل خود را وارد کنید" class="newsletter-input">
             <button class="newsletter-btn">عضویت</button>
         </div>
-        <div class="hamburger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
     </header>
 
-    <!-- منوی موبایل -->
-    <div class="overlay"></div>
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
-            <li><a href="services.html"><i class="fas fa-concierge-bell"></i> خدمات</a></li>
-            <li><a href="contact.html"><i class="fas fa-phone"></i> تماس با ما</a></li>
-        </ul>
-    </div>
-
-    <!-- محتوای اصلی -->
     <main>
-        <section class="blog-post">
-            <h3>عنوان پست وبلاگ</h3>
-            <p>این یک متن نمونه است. شما می‌توانید این متن را با محتوای خود جایگزین کنید.</p>
-            <a href="#">بیشتر بخوانید</a>
+        <!-- معرفی کوتاه -->
+        <section class="intro">
+            <h2>به سایت کد زیبا خوش آمدید!</h2>
+            <p>ما در کد زیبا با افتخار بهترین و پیشرفته‌ترین خدمات طراحی وب‌سایت و اپلیکیشن‌های موبایل را ارائه می‌دهیم.</p>
         </section>
-        <section class="blog-post">
-            <h3>عنوان پست وبلاگ</h3>
-            <p>این یک متن نمونه است. شما می‌توانید این متن را با محتوای خود جایگزین کنید.</p>
-            <a href="#">بیشتر بخوانید</a>
+
+        <!-- آخرین مقالات بلاگ -->
+        <section class="blog-posts">
+            <h2>آخرین مقالات بلاگ</h2>
+            <article class="blog-post">
+                <h3>عنوان پست وبلاگ</h3>
+                <p>این یک متن نمونه است. شما می‌توانید این متن را با محتوای خود جایگزین کنید.</p>
+                <a href="#">بیشتر بخوانید</a>
+            </article>
+            <article class="blog-post">
+                <h3>عنوان پست وبلاگ</h3>
+                <p>این یک متن نمونه است. شما می‌توانید این متن را با محتوای خود جایگزین کنید.</p>
+                <a href="#">بیشتر بخوانید</a>
+            </article>
+        </section>
+
+        <!-- نظرات مشتریان -->
+        <section class="testimonials">
+            <h2>نظرات مشتریان</h2>
+            <div class="testimonial">
+                <p>خدمات کد زیبا عالی بود و طراحی وب‌سایت ما بسیار حرفه‌ای و جذاب شد.</p>
+                <cite>مشتری ۱</cite>
+            </div>
+            <div class="testimonial">
+                <p>تیم کد زیبا به همه نیازهای ما پاسخ داد و یک تجربه‌ی بسیار خوب برای ما ایجاد کرد.</p>
+                <cite>مشتری ۲</cite>
+            </div>
+        </section>
+
+        <!-- مزایا و ویژگی‌ها -->
+        <section class="features">
+            <h2>چرا ما را انتخاب کنید؟</h2>
+            <div class="features-container">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="feature-content">
+                        <h3>کیفیت بالا</h3>
+                        <p>ما بهترین کیفیت طراحی و برنامه‌نویسی را ارائه می‌دهیم.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-lock"></i>
+                    <div class="feature-content">
+                        <h3>امنیت بالا</h3>
+                        <p>سایت‌های ما با جدیدترین استانداردهای امنیتی ساخته می‌شوند.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <div class="feature-content">
+                        <h3>سرعت بالا</h3>
+                        <p>وب‌سایت‌های ما بهینه‌سازی شده و سریع بارگذاری می‌شوند.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <div class="feature-content">
+                        <h3>پشتیبانی ۲۴/۷</h3>
+                        <p>تیم پشتیبانی ما همیشه در کنار شماست.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <!-- آیکون‌های شبکه‌های اجتماعی در سمت راست -->
-    <div class="social-icons-container">
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    <!-- ابزارهای جانبی -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-container">
+        <div class="elfsight-app-a409464f-0fd9-4cd0-88ec-f4ca2ef2e664" data-elfsight-app-lazy></div>
+        <div class="elfsight-app-a73cb180-4ad9-4ae2-9f47-06223b82e95a whatsapp-widget" data-elfsight-app-lazy></div>
     </div>
 
-    <!-- فوتر -->
-    <footer>
-        <div class="social-icons-container">
-            <a href="https://telegram.me/nevisande2000" class="social-icon" target="_blank">
-                <i class="fab fa-telegram-plane"></i> <!-- تلگرام -->
-            </a>
-            <a href="https://www.instagram.com/nevisande2000" class="social-icon" target="_blank">
-                <i class="fab fa-instagram"></i> <!-- اینستاگرام -->
-            </a>
-            <a href="https://eitaa.com/nevisande2000" class="social-icon" target="_blank">
-                <i class="fab fa-telegram-plane"></i> <!-- ایتا -->
-            </a>
-            <a href="https://soroush.app/nevisande2000" class="social-icon" target="_blank">
-                <i class="fab fa-telegram-plane"></i> <!-- سروش -->
-            </a>
-            <a href="https://www.facebook.com/nevisande2000" class="social-icon" target="_blank">
-                <i class="fab fa-facebook-f"></i> <!-- فیس بوک -->
-            </a>
-        </div>
-        
-    </footer>
-    
-
-    <!-- اسکریپت برای منوی همبرگری -->
-    <script>
-        const hamburger = document.querySelector('.hamburger-menu');
-        const overlay = document.querySelector('.overlay');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        
-        hamburger.addEventListener('click', () => {
-            overlay.classList.toggle('open');
-            mobileMenu.classList.toggle('open');
-        });
-        
-        overlay.addEventListener('click', () => {
-            overlay.classList.remove('open');
-            mobileMenu.classList.remove('open');
-        });
-    </script>
 </body>
 </html>
