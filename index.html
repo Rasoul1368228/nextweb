@@ -18,39 +18,42 @@
             <a href="#">لوگو</a>
         </div>
         <ul class="nav-links">
-            <li><a href="#">خانه</a></li>
-            <li><a href="#">خدمات</a></li>
-            <li><a href="#">نمونه کارها</a></li>
-            <li><a href="#">درباره ما</a></li>
-            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#home"><i class="fas fa-home"></i> خانه</a></li>
+            <li><a href="#services"><i class="fas fa-cogs"></i> خدمات</a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase"></i> نمونه کارها</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+            <li><a href="#contact"><i class="fas fa-phone-alt"></i> تماس با ما</a></li>
         </ul>
     </nav>
 </header>
 
 <!-- بنر اصلی -->
-<section class="hero">
+<section id="home" class="hero">
     <div class="hero-content">
         <h1>خوش آمدید به سایت حرفه‌ای ما</h1>
         <p>اینجا جایی است که بهترین خدمات را دریافت خواهید کرد!</p>
-        <a href="#" class="cta-btn">شروع کنید</a>
+        <a href="#services" class="cta-btn"><i class="fas fa-arrow-down"></i> شروع کنید</a>
     </div>
 </section>
 
 <!-- خدمات و آمار -->
-<section class="services-stats">
+<section id="services" class="services-stats">
     <div class="container">
         <div class="services">
-            <h2>خدمات ما</h2>
+            <h2><i class="fas fa-cogs"></i> خدمات ما</h2>
             <div class="service-box">
                 <div class="service-item">
+                    <i class="fas fa-laptop-code fa-2x"></i>
                     <h3>طراحی سایت</h3>
                     <p>طراحی سایت‌های حرفه‌ای و واکنشگرا برای کسب‌وکار شما.</p>
                 </div>
                 <div class="service-item">
+                    <i class="fas fa-search fa-2x"></i>
                     <h3>SEO</h3>
                     <p>افزایش رتبه سایت شما در موتورهای جستجو.</p>
                 </div>
                 <div class="service-item">
+                    <i class="fas fa-comments fa-2x"></i>
                     <h3>مشاوره</h3>
                     <p>ارائه مشاوره‌های تخصصی در زمینه کسب‌وکار آنلاین.</p>
                 </div>
@@ -58,7 +61,7 @@
         </div>
 
         <div class="stats">
-            <h2>آمار و نتایج</h2>
+            <h2><i class="fas fa-chart-line"></i> آمار و نتایج</h2>
             <div class="stat-box">
                 <div class="stat-item">
                     <h3 id="counter1">0</h3>
@@ -78,9 +81,9 @@
 </section>
 
 <!-- نمونه کارها -->
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
     <div class="container">
-        <h2>نمونه کارهای ما</h2>
+        <h2><i class="fas fa-briefcase"></i> نمونه کارهای ما</h2>
         <div class="portfolio-items">
             <div class="portfolio-item">
                 <img src="project1.jpg" alt="نمونه کار 1">
@@ -101,61 +104,62 @@
 <!-- فرم خبرنامه در وسط صفحه -->
 <section class="newsletter-middle">
     <div class="container">
-        <h2>برای دریافت جدیدترین اخبار و تخفیف‌ها، ایمیل خود را وارد کنید:</h2>
+        <h2><i class="fas fa-envelope"></i> برای دریافت جدیدترین اخبار و تخفیف‌ها، ایمیل خود را وارد کنید:</h2>
         <form action="#" method="POST">
             <input type="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
-            <button type="submit">اشتراک</button>
+            <button type="submit"><i class="fas fa-paper-plane"></i> اشتراک</button>
         </form>
     </div>
 </section>
+
 <!-- نظرات مشتریان -->
 <section class="testimonials">
     <div class="container">
-        <h2>نظرات مشتریان</h2>
+        <h2><i class="fas fa-comments"></i> نظرات مشتریان</h2>
         <div class="testimonial-box">
             <div class="testimonial-item">
                 <p>این تیم بهترین خدمات طراحی وب را ارائه دادند، بسیار راضی هستیم!</p>
-                <h4>مهسا محمدی </h4>
+                <h4>مهسا محمدی</h4>
                 <p>مدیر کسب‌وکار</p>
             </div><br>
             <div class="testimonial-item">
                 <p>وب‌سایت ما به سرعت در نتایج جستجو بالا آمد. عالی بود!</p>
-                <h4>رسول حیدروند </h4>
+                <h4>رسول حیدروند</h4>
                 <p>مدیر بازاریابی</p>
             </div>
         </div>
     </div>
 </section>
 
-
 <!-- فوتر حرفه‌ای -->
-<footer>
+<footer id="about">
     <div class="footer-content">
         <div class="about-footer">
-            <h3>درباره ما</h3>
+            <h3><i class="fas fa-info-circle"></i> درباره ما</h3>
             <p> 
                 ما تیمی خلاق و متعهد از طراحان و توسعه‌دهندگان وب هستیم که با تمرکز بر ارائه راهکارهای نوین و حرفه‌ای، به کسب‌وکارها کمک می‌کنیم تا حضور آنلاین مؤثری داشته باشند. هدف ما ارائه خدمات با کیفیت و جلب رضایت کامل مشتریان است.
             </p>
-       <br><p> جهت ارتباط با متخصص طراحی تیم ایمیل: rasoul6856@gmail.com</p>
-     </div>
+            <br>
+            <p> جهت ارتباط با متخصص طراحی تیم ایمیل: rasoul6856@gmail.com</p>
+        </div>
 
         <div class="footer-menu">
-            <h3>لینک‌های مفید</h3>
-            <ul>
-                <li><a href="#">خانه</a></li>
-                <li><a href="#">خدمات</a></li>
-                <li><a href="#">نمونه کارها</a></li>
-                <li><a href="#">درباره ما</a></li>
-                <li><a href="#">تماس با ما</a></li>
+            <h3><i class="fas fa-link"></i> لینک‌های مفید</h3>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> خانه</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> خدمات</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> نمونه کارها</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                <li><a href="#contact"><i class="fas fa-phone-alt"></i> تماس با ما</a></li>
             </ul>
         </div>
 
         <div class="social-links">
-            <h3>دنبال کنید</h3>
+            <h3><i class="fas fa-share-alt"></i> دنبال کنید</h3>
             <ul>
-                <li><a href="#">فیسبوک</a></li>
-                <li><a href="#">اینستاگرام</a></li>
-                <li><a href="#">توییتر</a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> فیسبوک</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> اینستاگرام</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> توییتر</a></li>
             </ul>
         </div>
     </div>
