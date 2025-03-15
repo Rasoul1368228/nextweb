@@ -47,3 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error(counter3.error);
     }
 });
+const menuToggle = document.querySelector('.menu-toggle');
+const verticalMenu = document.querySelector('.vertical-menu');
+
+menuToggle.addEventListener('click', () => {
+    verticalMenu.classList.toggle('active');
+});
