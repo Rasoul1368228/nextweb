@@ -324,9 +324,12 @@ footer .footer-content {
 }
 
 /* بخش شبکه‌های اجتماعی */
+
 .social-links {
    flex: 1;
    padding: 10px;
+
+   backdrop-filter: blur(10px);
 }
 
 .social-links h3 {
@@ -746,4 +749,11 @@ img {
    padding: 20px; /* برای زیبایی */
    position: relative;
    z-index: 100; /* کمتر از منو تا همیشه زیر منو قرار نگیرد */
+}
+@keyframes shake {
+   0% { transform: rotate(0deg); }
+   25% { transform: rotate(5deg); }
+   50% { transform: rotate(0deg); }
+   75% { transform: rotate(-5deg); }
+   100% { transform: rotate(0deg); }
 }
