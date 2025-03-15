@@ -7,10 +7,12 @@
 
 /* استایل کلی بدنه */
 body {
-   font-family: 'Vazir', sans-serif;
+    font-family: 'Vazir', sans-serif;
    background-color: #f0f0f0;
    color: #333;
    direction: rtl; /* راست‌چین کردن کل صفحه */
+   padding-top: 100px; /* افزایش فاصله برای جلوگیری از پوشش محتوا توسط هدر */
+   padding-right: 250px;
 }
 /* هدر و منو با موقعیت ثابت */
 header {
@@ -111,6 +113,7 @@ header .nav-links a:hover {
    align-items: center;
    text-align: center;
    color: rgb(13, 2, 2);
+   margin-top: 80px; /* ارتفاع هدر را در نظر بگیرید */
 }
 
 .hero h1 {
@@ -657,4 +660,90 @@ html {
 .fas:hover {
    color: #ff6f61; /* رنگ قرمز جذاب برای هاور */
    transform: scale(1.2); /* افزایش اندازه آیکون هنگام هاور */
+}
+
+/* اطمینان از ریسپانسیو بودن تصاویر */
+img {
+   max-width: 100%;
+   height: auto;
+}
+/* استایل کلی منو */
+.vertical-menu {
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 250px;
+   background: rgba(255, 255, 255, 0.8);
+   backdrop-filter: blur(10px);
+   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+   z-index: 1000; /* مقدار بالا برای قرار گرفتن روی سایر عناصر */
+   padding-top: 20px;
+   transition: transform 0.3s ease;
+}
+
+/* آیتم‌های منو */
+.menu-items {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.menu-items li {
+   margin-bottom: 15px;
+}
+
+.menu-items a {
+   text-decoration: none;
+   color: #333;
+   padding: 15px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   border-radius: 8px;
+   transition: background 0.3s ease;
+}
+
+.menu-items a:hover {
+   background-color: #f0f0f0;
+}
+
+/* آیکون‌ها */
+.menu-items i {
+   font-size: 18px;
+}
+
+/* منوی همبرگری */
+.menu-toggle {
+   display: none;
+   position: fixed;
+   top: 10px;
+   left: 15px;
+   font-size: 24px;
+   cursor: pointer;
+   z-index: 1100px;
+   right: 10px;
+}
+
+/* برای موبایل */
+@media (max-width: 768px) {
+   .vertical-menu {
+       transform: translateX(100%);
+   }
+
+   .vertical-menu.active {
+       transform: translateX(0);
+   }
+
+   .menu-toggle {
+       display: block;
+   }
+}
+
+/* محتوای اصلی */
+.main-content {
+   margin-right: 250px; /* فاصله به اندازه عرض منو */
+   padding: 20px; /* برای زیبایی */
+   position: relative;
+   z-index: 100; /* کمتر از منو تا همیشه زیر منو قرار نگیرد */
 }
