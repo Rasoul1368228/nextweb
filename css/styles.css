@@ -13,6 +13,7 @@ body {
    direction: rtl; /* راست‌چین کردن کل صفحه */
    padding-top: 100px; /* افزایش فاصله برای جلوگیری از پوشش محتوا توسط هدر */
    padding-right: 250px;
+   overflow-x: hidden;
 }
 /* هدر و منو با موقعیت ثابت */
 header {
@@ -756,4 +757,14 @@ img {
    50% { transform: rotate(0deg); }
    75% { transform: rotate(-5deg); }
    100% { transform: rotate(0deg); }
+}
+@media (max-width: 768px) {
+   .container {
+       flex-direction: column; /* چیدن آیتم‌ها زیر هم */
+       text-align: center; /* وسط‌چین کردن محتوا */
+   }
+   
+   .menu {
+       display: block; /* نمایش منو به‌صورت دکمه */
+   }
 }
