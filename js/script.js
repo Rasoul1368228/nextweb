@@ -53,3 +53,4 @@ const verticalMenu = document.querySelector('.vertical-menu');
 menuToggle.addEventListener('click', () => {
     verticalMenu.classList.toggle('active');
 });
+alert('به سایت تیم ما خوش اومدید برای ثبت و سفارش سایت مورد نظر با همکاران ما در ارتباط باشی');
