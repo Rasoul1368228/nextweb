@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         decimal: '.'
     };
 
-    var counter1 = new CountUp('counter1', 0, 100, 0, 2, options);
+    var counter1 = new CountUp('counter1', 0, 120, 0, 2, options);
     if (!counter1.error) {
         counter1.start();
     } else {
