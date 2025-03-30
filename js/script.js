@@ -53,4 +53,9 @@ const verticalMenu = document.querySelector('.vertical-menu');
 menuToggle.addEventListener('click', () => {
     verticalMenu.classList.toggle('active');
 });
-alert('به سایت تیم ما خوش اومدید برای ثبت و سفارش سایت مورد نظر با همکاران ما در ارتباط باشی');
+
+
+var a = prompt(" سن خود را وارد کنید");
+var year = 1404 - a;
+alert("your birth year is:" + year);
+
