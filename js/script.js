@@ -59,4 +59,4 @@ menuToggle.addEventListener("click", () => {
 
 var a = prompt(" سن خود را وارد کنید");
 var year = 1404 - a;
-alert("سن شما به تاریخ شمسی میشه :" + year);
+alert("خوش اومدید . سن شما به تاریخ شمسی میشه : " + year);
