@@ -7,6 +7,7 @@
 
 /* استایل کلی بدنه */
 body {
+    src: url('../font/Vazir-FD-WOL.ttf') format('truetype');
     font-family: 'Vazir', sans-serif;
    background-color: #f0f0f0;
    color: #333;
