@@ -84,11 +84,20 @@ header .nav-links a:hover {
 }
 /* منوی موبایل */
 @media (max-width: 768px) {
-   header nav {
-       flex-direction: column;
-       align-items: flex-start;
-       padding: 10px;
-   }
+   /* استایل بهبود یافته منوهای موبایل */
+        .sidenav {
+            width: 250px;
+        }
+
+        /* اصلاح وضعیت منوی موبایل */
+        .sidenav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1000;
+            padding-top: 50px;
+        }
 
    header .nav-links {
        flex-direction: column;
